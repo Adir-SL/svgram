@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVGRAM</title>
     <style>
-        body{background: rgb(240, 240, 240); height: 200vh;}
+        body{background: rgb(240, 240, 240);}
+        #wrapper{margin-bottom: 64px;}
         .storyWrapper{background-color: #ffffff; height: 96px; width: 100%; max-width: 600px; align-items:center; justify-content: space-evenly; padding: 10px; overflow: hidden; margin-top: 80px; border: 1px solid lightgray}
         .storyWrapper object{margin: 3px;}
         .centerMe{margin-left: 50%; transform: translateX(-50%);}
@@ -51,6 +52,7 @@
             <object data="Pre.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_03.jpg)");this.contentDocument.getElementById("userName").innerHTML="Garfield";'></object>
             <object data="Image.svg" onload='this.contentDocument.getElementById("bigImage").style.setProperty("--image","url(images/Cat_03.jpg)");'></object>
             <object data="Post.svg" onload='this.contentDocument.getElementById("likes").innerHTML="8 Likes";this.contentDocument.getElementById("userName").innerHTML="Garfield";this.contentDocument.getElementById("userText").innerHTML="Another great picture of me, I know I always look good but today I really outdid myself, I think in general I am more good looking than most cats and of course most humans...";'></object>
+            <a href="system.html" style="float:right;color:#ED4956;font-family: sans-serif;">See the system</a>
         </div>
     </div>
 </body>
