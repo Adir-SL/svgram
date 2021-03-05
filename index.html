@@ -7,8 +7,7 @@
     <title>SVGRAM</title>
     <style>
         body{background: rgb(240, 240, 240); height: 200vh;}
-        .storyWrapper{background-color: #ffffff; display:flex; width: 100%; max-width: 600px; align-items:center; justify-content: space-evenly; padding: 10px; overflow: hidden; margin-top: 80px; border: 1px solid lightgray}
-        .storyWrapper .object{display:block;}
+        .storyWrapper{background-color: #ffffff; width: 100%; max-width: 600px; align-items:center; justify-content: space-evenly; padding: 10px; overflow: hidden; margin-top: 80px; border: 1px solid lightgray}
         .centerMe{margin-left: 50%; transform: translateX(-50%);}
         .header{position: fixed; top:0; z-index:10; left: 0;}
         .imageWrapper{width: 100%; max-width: 620px; border: 1px solid lightgray; margin-top: 20px; background-color: #ffffff;}
@@ -29,7 +28,6 @@
             <object data="Story.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_04.jpg)");this.contentDocument.getElementById("userName").innerHTML="Garfield";'></object>
             <object data="Story.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_05.jpg)");this.contentDocument.getElementById("userName").innerHTML="Lady";'></object>
             <object data="Story.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_06.jpg)");this.contentDocument.getElementById("userName").innerHTML="Pinky";'></object>
-            <object data="Story.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_01.jpg)");this.contentDocument.getElementById("userName").innerHTML="Tiger King";'></object>
         </div>
         
         <div class="imageWrapper centerMe">
