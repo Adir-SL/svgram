@@ -1,0 +1,19 @@
+<svg id="userImage" width="76" height="97" viewBox="0 0 76 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+#userImage{
+    background-image: var(--image, url(images/Cat_01.jpg));
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+</style>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M76 0H0V94H76V0ZM38 67C54.5685 67 68 53.5685 68 37C68 20.4315 54.5685 7 38 7C21.4315 7 8 20.4315 8 37C8 53.5685 21.4315 67 38 67Z" fill="white"/>
+<ellipse cx="37.9127" cy="36.9446" rx="33.9127" ry="33.9446" stroke="url(#paint0_linear)" stroke-width="2.3"/>
+<text id="userName" x="38" y="90" text-anchor="middle" fill="black" style="font-family: sans-serif; font-size: 14px;">Tiger King</text>
+<rect x="0" y="0" width="76" height="97" stroke="#ffffff" stroke-width="4"/>
+<defs>
+<linearGradient id="paint0_linear" x1="37.9127" y1="3" x2="37.9127" y2="70.8892" gradientUnits="userSpaceOnUse">
+<stop stop-color="#DE0046"/>
+<stop offset="1" stop-color="#F7A34B"/>
+</linearGradient>
+</defs>
+</svg>

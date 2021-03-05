@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        .flexDiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+            flex-grow: 0;
+            gap: 22px;
+        }
+        object{
+            max-width: 360px;
+            border: 1px solid gray;
+            background-color: white;
+        }
+        #pre{
+            height: 49px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexDiv">
+        <object data="Header.svg"></object>
+        <object data="Story.svg"></object>
+        <object data="Pre.svg" id="pre"></object>
+        <object data="Image.svg"></object>
+        <object data="Post.svg"></object>
+    </div>
+</body>
+</html>

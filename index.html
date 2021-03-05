@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVGRAM</title>
+    <style>
+        body{background: rgb(240, 240, 240); height: 200vh;}
+        .storyWrapper{background-color: #ffffff; display:flex; width: 100%; max-width: 600px; align-items:center; justify-content: space-evenly; padding: 10px; overflow: hidden; margin-top: 80px; border: 1px solid lightgray}
+        .centerMe{margin-left: 50%; transform: translateX(-50%);}
+        .header{position: fixed; top:0; z-index:10; left: 0;}
+        .imageWrapper{width: 100%; max-width: 620px; border: 1px solid lightgray; margin-top: 20px; background-color: #ffffff;}
+        @media screen and (max-width: 600px) {
+            .storyWrapper{border-color: transparent;border-bottom-color: lightgray;}
+            body{background-color: #ffffff;}
+            .imageWrapper{border:transparent;margin-top: 8px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <object data="Header.svg" class="header"></object>
+        <div class="storyWrapper centerMe">
+            <object data="Story.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_01.jpg)");this.contentDocument.getElementById("userName").innerHTML="Tiger King";'></object>
+            <object data="Story.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_02.jpg)");this.contentDocument.getElementById("userName").innerHTML="Kitten";'></object>
+            <object data="Story.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_03.jpg)");this.contentDocument.getElementById("userName").innerHTML="Mr. Busy";'></object>
+            <object data="Story.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_04.jpg)");this.contentDocument.getElementById("userName").innerHTML="Garfield";'></object>
+            <object data="Story.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_05.jpg)");this.contentDocument.getElementById("userName").innerHTML="Lady";'></object>
+            <object data="Story.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_06.jpg)");this.contentDocument.getElementById("userName").innerHTML="Pinky";'></object>
+            <object data="Story.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_01.jpg)");this.contentDocument.getElementById("userName").innerHTML="Tiger King";'></object>
+        </div>
+        
+        <div class="imageWrapper centerMe">
+            <object data="Pre.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_01.jpg)");this.contentDocument.getElementById("userName").innerHTML="Tiger King";'></object>
+            <object data="Image.svg" onload='this.contentDocument.getElementById("bigImage").style.setProperty("--image","url(images/Cat_01.jpg)");'></object>
+            <object data="Post.svg" onload='this.contentDocument.getElementById("likes").innerHTML="21 Likes";this.contentDocument.getElementById("userName").innerHTML="Tiger King";this.contentDocument.getElementById("userText").innerHTML="A cute cat I found in the street walking around begging for food, if you know this cat, please call me and we will get together and maybe I will buy you dinner because you found my cat, thank you very...";'></object>
+        </div>
+
+        <div class="imageWrapper centerMe">
+            <object data="Pre.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_06.jpg)");this.contentDocument.getElementById("userName").innerHTML="Lady";'></object>
+            <object data="Image.svg" onload='this.contentDocument.getElementById("bigImage").style.setProperty("--image","url(images/Cat_06.jpg)");'></object>
+            <object data="Post.svg" onload='this.contentDocument.getElementById("likes").innerHTML="93 Likes";this.contentDocument.getElementById("userName").innerHTML="Lady";this.contentDocument.getElementById("userText").innerHTML="This is a picture of a damn cat, if you like cats in general - you will love this one as this is one of the best cats around and if you disagree with that, well, you are a fool, sir, and you are NOT worthy of such a great cat...";'></object>
+        </div>
+
+        <div class="imageWrapper centerMe">
+            <object data="Pre.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_03.jpg)");this.contentDocument.getElementById("userName").innerHTML="Garfield";'></object>
+            <object data="Image.svg" onload='this.contentDocument.getElementById("bigImage").style.setProperty("--image","url(images/Cat_03.jpg)");'></object>
+            <object data="Post.svg" onload='this.contentDocument.getElementById("likes").innerHTML="8 Likes";this.contentDocument.getElementById("userName").innerHTML="Garfield";this.contentDocument.getElementById("userText").innerHTML="Another great picture of me, I know I always look good but today I really outdid myself, I think in general I am more good looking than most cats and of course most humans...";'></object>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<svg id="userImage" width="100%" height="100%" viewBox="0 0 375 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+#userImage{
+    background-image: var(--image, url(Cat_01.jpg));
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+@media screen and (min-width: 600px) {
+    #userName{
+        transform: scale(.6);
+        transform-origin: 12% 50%;
+    }
+    .icon{
+        transform: scale(.6);
+        transform-origin: 96% 50%;
+    }
+}
+</style>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M375 0H0V49H375V0ZM23 10C14.7157 10 8 16.7157 8 25C8 33.2843 14.7157 40 23 40C31.2843 40 38 33.2843 38 25C38 16.7157 31.2843 10 23 10Z" fill="white"/>
+<text id="userName" x="46" y="30" text-anchor="left" fill="black" style="font-family: sans-serif; font-size: 14px;font-weight:bold;">Tiger King</text>
+<g class="icon">
+    <circle cx="348.3" cy="24.5" r="1.5" fill="#262626"/>
+    <circle cx="353.8" cy="24.5" r="1.5" fill="#262626"/>
+    <circle cx="359.3" cy="24.5" r="1.5" fill="#262626"/>
+</g>
+<rect x="0" y="0" width="375" height="49" stroke="#ffffff" stroke-width="4"/>
+</svg>
