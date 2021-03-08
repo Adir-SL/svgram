@@ -5,14 +5,40 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.iconHeart path{
+    transform: scale(10) translate(15px, 15px);
+}
+.iconHeart{
+    pointer-events: none;
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    opacity: 0;
+}
+.liked{
+    animation: likeAnim 800ms linear;
+}
+@keyframes likeAnim{
+    0%{transform: scale(0.9);opacity: 0;}
+    10%{transform: scale(1.2);opacity: 1;}
+    25%{transform: scale(0.9);opacity: 1;}
+    40%{transform: scale(1);opacity: 1;}
+    90%{transform: scale(1);opacity: 1;}
+    100%{transform: scale(1);opacity: 0;}
+}
 </style>
+<g class="iconHeart">
+<path d="M23.4995 30.2609C23.1062 30.2609 22.7307 30.1362 22.4133 29.9001C20.2588 28.3012 15.1094 24.3239 13.8176 21.9143C12.1279 18.7654 13.1426 14.7213 16.0749 12.8997C17.0225 12.3118 18.0953 12 19.186 12C20.8176 12 22.3508 12.6681 23.4995 13.8573C24.6483 12.6681 26.1815 12 27.8131 12C28.9038 12 29.9766 12.3118 30.9242 12.8997C33.8565 14.7213 34.8712 18.7654 33.186 21.9143C31.8942 24.3239 26.7448 28.3012 24.5902 29.9001C24.2684 30.1362 23.8929 30.2609 23.4995 30.2609ZM19.186 13.3362C18.3456 13.3362 17.5187 13.5767 16.7856 14.031C14.4389 15.4918 13.6343 18.7432 14.9976 21.2819C16.1956 23.5177 21.5864 27.6242 23.209 28.8267C23.3789 28.9514 23.6158 28.9514 23.7856 28.8267C25.4082 27.6197 30.799 23.5133 31.997 21.2819C33.3603 18.7432 32.5557 15.4874 30.209 14.031C29.4804 13.5767 28.6534 13.3362 27.8131 13.3362C26.3425 13.3362 24.9657 14.0488 24.0359 15.287L23.4995 16.0085L22.9631 15.287C22.0334 14.0488 20.6611 13.3362 19.186 13.3362Z" fill="white" stroke="white" stroke-width="0.7"/>
+<path d="M18 13C22 12.2 23.3333 14 23.5 15C24.5 13.8333 27.3 11.9 30.5 13.5C34.5 15.5 33 21 32 22.5C31.2 23.7 26.3333 27.6667 24 29.5C23.6667 29.6667 22.8 29.8 22 29C16.4 25 14 20.6667 13.5 19C13.3333 17.3333 14 13.8 18 13Z" fill="white"/>
+</g>
 <script>
 function likesChange(e){
+document.getElementsByClassName("iconHeart")[0].classList.remove('liked');
 if(parent.document.getElementsByClassName("postDetails")[e.target.num].contentDocument.getElementsByClassName("iconHeart")[0].className.baseVal == "iconHeart"){
 likeNum = parent.document.getElementsByClassName("postDetails")[e.target.num].contentDocument.getElementById("likes").innerHTML.slice(0,parent.document.getElementsByClassName("postDetails")[e.target.num].contentDocument.getElementById("likes").innerHTML.indexOf(" "));
 parent.document.getElementsByClassName("postDetails")[e.target.num].contentDocument.getElementById("likes").innerHTML = Number(likeNum) + 1 + " Likes";
 parent.document.getElementsByClassName("postDetails")[e.target.num].contentDocument.getElementsByClassName("iconHeart")[0].classList.add("liked");
 }
+setTimeout(function(){ document.getElementsByClassName("iconHeart")[0].classList.add('liked'); }, 100);
 }
 </script>
 </svg>
