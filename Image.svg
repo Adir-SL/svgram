@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
 }
 .iconHeart path{
-    transform: scale(10) translate(15px, 15px);
+    transform: scale(10) translate(17px, 19px);
 }
 .iconHeart{
     pointer-events: none;
