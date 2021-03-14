@@ -25,6 +25,7 @@
         .centerMe{margin-left: 50%; transform: translateX(-50%);}
         .header{position: fixed; top:0; z-index:10; left: 0;}
         .imageWrapper{width: 100%; max-width: 620px; border: 1px solid lightgray; margin-top: 20px; background-color: #ffffff;}
+        a:hover{filter:brightness(125%);}
         @media screen and (max-width: 600px) {
             .storyWrapper{border-color: transparent;border-bottom-color: lightgray;}
             body{background-color: #ffffff;}
@@ -64,7 +65,8 @@
             <object data="Pre.svg" onload='this.contentDocument.getElementById("userImage").style.setProperty("--image","url(images/Cat_03.jpg)");this.contentDocument.getElementById("userName").innerHTML="Garfield";'></object>
             <object data="Image.svg" onload='this.contentDocument.getElementById("bigImage").style.setProperty("--image","url(images/Cat_03.jpg)");this.contentDocument.getElementById("bigImage").num="2";'></object>
             <object data="Post.svg" class="postDetails" onload='this.contentDocument.getElementById("likes").innerHTML="8 Likes";this.contentDocument.getElementById("userName").innerHTML="Garfield";this.contentDocument.getElementById("userText").innerHTML="Another great picture of me, I know I always look good but today I really outdid myself, I think in general I am more good looking than most cats and of course most humans...";'></object>
-            <a href="system.html" style="float:right;color:#ED4956;font-family: sans-serif;">See the system</a>
+            <a href="system.html" style="float:right;clear:both;color:#ED4956;font-family: sans-serif;margin-top:16px;">See the SVG system</a>
+            <a href="https://github.com/Adir-SL/svgram" style="float:right;clear:both;color:#ED4956;font-family: sans-serif;margin-top:16px;">See the Code</a>
         </div>
     </div>
     <!-- <script src="https://adir-sl.github.io/Visual-Console/vconsole.js"></script> -->
